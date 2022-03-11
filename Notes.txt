@@ -1,0 +1,21 @@
+https://youtu.be/Lc9BRrojGtA?t=6816
+
+https://www.npmjs.com/package/json-server
+
+Install JSON Server
+        npm install -g json-server
+Start JSON Server
+        json-server --watch db.json
+ http://localhost:3000/posts/1, you'll get
+        { "id": 1, "title": "json-server", "author": "typicode" }
+
+cd src/assets/data
+
+npm install --save bootstrap
+        style [] -- ./node_modules/bootstrap/dist/css/bootstrap.min.css
+        script[] -- /node_modules/bootstrap/dist/js/bootstrap.min.js
+npm install --save jquery
+        script[] -- ./node_modules/jquery/dist/jquery.js
+
+ng g m products --route products --module app.module
+        This will create a module "products" with it lazy-loading routing in app.routing file 

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar .container-fluid{
+    padding-left: 10px;
+    align-items: normal !important;
+}
+.footBtm{
+    color: #0d6efd !important;
+}
+.d-flex .btn{
+    color: aliceblue;
+    background-color: darkblue;
+}
