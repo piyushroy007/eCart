@@ -1,4 +1,6 @@
-https://youtu.be/Lc9BRrojGtA?t=6816
+https://youtu.be/Lc9BRrojGtA?t=11408
+
+git push --set-upstream origin staging
 
 https://www.npmjs.com/package/json-server
 

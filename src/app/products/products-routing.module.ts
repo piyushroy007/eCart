@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'add-products', component: AddProductsComponent },
   { path: 'viewprod/:id' , component :ViewProductComponent},
   //{ path: 'listprod' , component :ViewAllProductComponent},
-  { path: 'searchcat' , component :ViewProductByCategoryComponent},
+  { path: 'searchcat/:id' , component :ViewProductByCategoryComponent},
   { path: 'searchdate' , component :ViewProductByDateComponent},
   { path: 'deleteprod' , component :DeleteProductComponent},
   { path: 'updateprod/:id' , component :UpdateProductComponent}

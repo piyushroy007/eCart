@@ -1,6 +1,8 @@
 <div class="list-group list-group-flush">
-    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!" 
-    *ngFor="let item of categoryList">
+    <a class="list-group-item  p-3" href="prod">View All Products</a>
+    <a class="list-group-item  p-3" 
+    *ngFor="let item of categoryList"
+     href="prod/searchcat/{{item.id}}">
         {{item.categoryName}}
     </a>
 </div>

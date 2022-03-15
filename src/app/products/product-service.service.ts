@@ -17,6 +17,9 @@ export class ProductServiceService {
   viewProduct():Observable<Product>{
     return this.httpclient.get<Product>(`${AppConstants.BASE_URL}${AppConstants.PROD}`);
   }
+  viewProductByID(pID):Observable<Product>{
+    return this.httpclient.get<Product>(`${AppConstants.BASE_URL}products?id=${pID}`);
+  }
   updateProduct(prodId,prodBody):Observable<Product>{
     return this.httpclient.put<Product>(`${AppConstants.BASE_URL}${AppConstants.PROD}${prodId}`,prodBody);
   }
@@ -24,7 +27,7 @@ export class ProductServiceService {
     return this.httpclient.delete<Product>(`${AppConstants.BASE_URL}${AppConstants.PROD}${prodId}`);
   }
   searchCatProduct(catId):Observable<Product>{
-    return this.httpclient.get<Product>(`${AppConstants.BASE_URL}${AppConstants.PROD}${AppConstants.CATEGORY}${catId}`);
+    return this.httpclient.get<Product>(`${AppConstants.BASE_URL}products?categoryId=${catId}`);
   }
   searchDateProduct(dateParams):Observable<Product>{
     return this.httpclient.get<Product>(`${AppConstants.BASE_URL}${AppConstants.PROD}${AppConstants.DATE}${dateParams}`);
