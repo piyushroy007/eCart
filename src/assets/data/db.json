@@ -1,86 +1,126 @@
 {
-    "products": [
-      { "id" : 1,
-        "name" : "Frock",
-        "categoryId" :3 ,
-        "description" : "White Mini Frock",
-        "price" : 500,
-        "isAvailable" : true,
-        "productImg" : "http://localhost:4200/assets/products/product-1.jpg",
-        "rating" : 4,
-        "review" :150,
-        "vendor_name" : "abc shop",
-        "warranty" : 1
-      },{ "id" : 2,
-        "name" : "Jacket",
-        "categoryId" :4 ,
-        "description" : "Casual Kids jacket",
-        "price" : 500,
-        "isAvailable" : true,
-        "productImg" : "http://localhost:4200/assets/products/product-2.jpg",
-        "rating" : 4,
-        "review" :150,
-        "vendor_name" : "abcd shop",
-        "warranty" : 1
-      },
-      { "id" : 3,
-        "name" : "T-shirt",
-        "categoryId" :2,
-        "description" : "Cascual men blue t-shirt",
-        "price" : 500,
-        "isAvailable" : true,
-        "productImg" : "http://localhost:4200/assets/products/product-3.jpg",
-        "rating" : 4,
-        "review" :150,
-        "vendor_name" : "abc shop",
-        "warranty" : 1
-      },
-      { "id" : 4,
-        "name" : "Girl Top",
-        "categoryId" :3 ,
-        "description" : "Casual Girls Top",
-        "price" : 500,
-        "isAvailable" : true,
-        "productImg" : "http://localhost:4200/assets/products/product-4.jpg",
-        "rating" : 4,
-        "review" :150,
-        "vendor_name" : "abcz shop",
-        "warranty" : 1
-      },
-      { "id" : 5,
-        "name" : "Kids Jeans",
-        "categoryId" :4 ,
-        "description" : "Casual Kids Jeans",
-        "price" : 500,
-        "isAvailable" : true,
-        "productImg" : "http://localhost:4200/assets/products/product-5.jpg",
-        "rating" : 4,
-        "review" :150,
-        "vendor_name" : "abcm shop",
-        "warranty" : 1
-      },
-      { "id" : 6,
-        "name" : "Blazer",
-        "categoryId" :1 ,
-        "description" : "Men Black Blazer",
-        "price" : 500,
-        "isAvailable" : true,
-        "productImg" : "http://localhost:4200/assets/products/product-6.jpg",
-        "rating" : 4,
-        "review" :150,
-        "vendor_name" : "abc shop",
-        "warranty" : 1
-      }
-    ],
-    "categories": [
-      { "id": 1, "categoryName": "Electronics" },
-      { "id": 2, "categoryName": "Men" },
-      { "id": 3, "categoryName": "Women" },
-      { "id": 4, "categoryName": "Kids" },
-      { "id": 5, "categoryName": "Home & Furniture" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "products": [
+    {
+      "id": 1,
+      "name": "Frock",
+      "categoryId": 3,
+      "description": "White Mini Frock",
+      "price": 500,
+      "isAvailable": true,
+      "productImg": "http://localhost:4200/assets/products/product-1.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 2,
+      "name": "Jacket",
+      "categoryId": 4,
+      "description": "Casual Kids jacket",
+      "price": 500,
+      "isAvailable": true,
+      "productImg": "http://localhost:4200/assets/products/product-2.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abcd shop",
+      "warranty": 1
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "categoryId": 2,
+      "description": "Cascual men blue t-shirt",
+      "price": 500,
+      "isAvailable": true,
+      "productImg": "http://localhost:4200/assets/products/product-3.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 4,
+      "name": "Girl Top",
+      "categoryId": 3,
+      "description": "Casual Girls Top",
+      "price": 500,
+      "isAvailable": true,
+      "productImg": "http://localhost:4200/assets/products/product-4.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abcz shop",
+      "warranty": 1
+    },
+    {
+      "id": 5,
+      "name": "Kids Jeans",
+      "categoryId": 4,
+      "description": "Casual Kids Jeans",
+      "price": 500,
+      "isAvailable": true,
+      "productImg": "http://localhost:4200/assets/products/product-5.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abcm shop",
+      "warranty": 1
+    },
+    {
+      "id": 6,
+      "name": "Blazer",
+      "categoryId": 1,
+      "description": "Men Black Blazer",
+      "price": 500,
+      "isAvailable": true,
+      "productImg": "http://localhost:4200/assets/products/product-6.jpg",
+      "rating": 4,
+      "review": 150,
+      "vendor_name": "abc shop",
+      "warranty": 1
+    },
+    {
+      "id": 1101,
+      "categoryId": "2",
+      "name": "T-Shirt",
+      "description": "Blue",
+      "rating": "5",
+      "price": "1000",
+      "prodImg": "",
+      "isAvailable": 1,
+      "color": "T-Shirt",
+      "reviews": "Blue"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Electronics"
+    },
+    {
+      "id": 2,
+      "categoryName": "Men"
+    },
+    {
+      "id": 3,
+      "categoryName": "Women"
+    },
+    {
+      "id": 4,
+      "categoryName": "Kids"
+    },
+    {
+      "id": 5,
+      "categoryName": "Home & Furniture"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
