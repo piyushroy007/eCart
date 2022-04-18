@@ -12,6 +12,7 @@ import { Category } from 'src/app/site-layout/category';
 export class ViewProductByCategoryComponent implements OnInit {
   categoryId : Category ;
   productList : Product ;
+  noProd = true ;
   constructor(private activatedRoute:ActivatedRoute,private ps:ProductServiceService) { }
 
   ngOnInit(): void {
@@ -22,6 +23,10 @@ export class ViewProductByCategoryComponent implements OnInit {
     this.ps.searchCatProduct(this.categoryId).subscribe(data=>{
       console.log(data);
       this.productList = data ;
+      if(this.productList){
+        this.noProd=false;
+      }
+      
     })
   }
 

@@ -2,16 +2,15 @@
   "products": [
     {
       "id": 1,
-      "name": "Frock",
       "categoryId": 3,
-      "description": "White Mini Frock",
-      "price": 500,
-      "isAvailable": true,
+      "name": "Frock",
+      "description": "100% Cotton White Mini Frock ",
+      "rating": "5",
+      "price": "5000",
       "productImg": "http://localhost:4200/assets/products/product-1.jpg",
-      "rating": 4,
-      "review": 150,
-      "vendor_name": "abc shop",
-      "warranty": 1
+      "isAvailable": true,
+      "color": "Frock",
+      "reviews": "100% Cotton White Mini Frock "
     },
     {
       "id": 2,
@@ -79,16 +78,15 @@
       "warranty": 1
     },
     {
-      "id": 1101,
+      "id": 110,
       "categoryId": "2",
       "name": "T-Shirt",
-      "description": "Blue",
+      "description": "Casual Black T-shirt 100% cotton for summer",
       "rating": "5",
-      "price": "1000",
-      "prodImg": "",
-      "isAvailable": 1,
+      "price": "49999",
+      "isAvailable": "true",
       "color": "T-Shirt",
-      "reviews": "Blue"
+      "reviews": "Casual Black T-shirt 100% cotton for summer"
     }
   ],
   "categories": [

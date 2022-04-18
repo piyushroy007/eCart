@@ -17,14 +17,14 @@ export class AddProductsComponent implements OnInit {
     console.log(form.value);
     console.log("Form submitted");
     let newProd = {
-      id:1101,
+      id:111,
       categoryId : form.value.prod_category,
       name: form.value.prod_name,
       description: form.value.prod_description,
       rating: form.value.prod_rating,
       price: form.value.prod_price,
       prodImg : "",
-      isAvailable : 1,
+      isAvailable : form.value.prod_aval,
       color : form.value.prod_name,
       reviews : form.value.prod_description,
     };
