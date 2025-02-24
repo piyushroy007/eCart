@@ -11,20 +11,17 @@ import { ViewProductByDateComponent } from './view-product-by-date/view-product-
 import { ViewProductByCategoryComponent } from './view-product-by-category/view-product-by-category.component';
 import { FormsModule } from '@angular/forms';
 
-
 @NgModule({
-  declarations: [ProductsComponent,
+  declarations: [
+    ProductsComponent,
     AddProductsComponent,
     ViewProductComponent,
     UpdateProductComponent,
     ViewAllProductComponent,
     ViewProductByDateComponent,
-    ViewProductByCategoryComponent
+    ViewProductByCategoryComponent,
   ],
-  imports: [
-    CommonModule,
-    ProductsRoutingModule,
-    FormsModule
-  ]
+  imports: [CommonModule, ProductsRoutingModule, FormsModule],
+  exports: [ProductsRoutingModule],
 })
-export class ProductsModule { }
+export class ProductsModule {}

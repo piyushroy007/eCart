@@ -67,7 +67,7 @@
     {
       "id": 6,
       "name": "Blazer",
-      "categoryId": 1,
+      "categoryId": 2,
       "description": "Men Black Blazer",
       "price": 500,
       "isAvailable": true,
@@ -349,7 +349,8 @@
       "review": 150,
       "vendor_name": "abc shop",
       "warranty": 1
-    },{
+    },
+    {
       "id": 28,
       "name": "Dress",
       "categoryId": 3,
@@ -361,7 +362,8 @@
       "review": 150,
       "vendor_name": "abc shop",
       "warranty": 1
-    },{
+    },
+    {
       "id": 29,
       "name": "Jeans",
       "categoryId": 3,
@@ -373,7 +375,8 @@
       "review": 150,
       "vendor_name": "abc shop",
       "warranty": 1
-    },{
+    },
+    {
       "id": 30,
       "name": "Jeans",
       "categoryId": 3,
@@ -385,7 +388,8 @@
       "review": 150,
       "vendor_name": "abc shop",
       "warranty": 1
-    },{
+    },
+    {
       "id": 31,
       "name": "Skirt",
       "categoryId": 3,
@@ -397,7 +401,8 @@
       "review": 150,
       "vendor_name": "abc shop",
       "warranty": 1
-    },{
+    },
+    {
       "id": 32,
       "name": "Top",
       "categoryId": 3,

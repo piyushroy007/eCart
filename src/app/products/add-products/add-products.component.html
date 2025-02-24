@@ -1,75 +1,104 @@
-<h2>Add New Products of your choice...........</h2>
-<!--
-    
--->
 <div class="container">
-    <div class="row">
-        <form (submit)="addNewProducts(addProductForm)" #addProductForm="ngForm">
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationName">Product name</label>
-                    <input type="text" class="form-control is-valid" id="validationName" name="prod_name"
-                        placeholder="Add Product Name" required ngModel>
-                    <div class="valid-feedback">
-                    Looks good!
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="validationCategory">Category Id</label>
-                    <select class="form-control is-valid" id="validationCategory" name="prod_category"
-                        required ngModel>
-                        <option value="1">Electronics</option>
-                        <option value="2">Men</option>
-                        <option value="3">Women</option>
-                        <option value="4">Kids</option>
-                        <option value="5">Home & Furniture</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationPrice">Price</label>
-                    <input type="text" class="form-control is-valid" id="validationPrice" name="prod_price"
-                        placeholder="Price of Product" required ngModel>
-                    <div class="valid-feedback">
-                    Looks good!
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="validationDescription">Description</label>
-                    <div class="input-group">
-                        <textarea type="text" class="form-control is-valid" id="validationDescription" name="prod_description"
-                        placeholder="Enter Description" required ngModel></textarea>
-                        <div class="invalid-feedback">
-                        Please choose a Description.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="validationRating">Rating</label>
-                    <select class="custom-select" id="validationRating" name="prod_rating" required ngModel>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="validationavail">Available </label>
-                    <select class="custom-select" id="validationavail" name="prod_aval" required ngModel>
-                        <option>Yes</option>
-                        <option>No</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <button class="btn btn-primary" type="submit">Submit Form</button>
-                </div>
-            </div>
-        </form>
-    </div>
+  <h3>Add Products</h3>
+  <div class="row">
+    <form (submit)="addNewProducts(addProductForm)" #addProductForm="ngForm">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="validationName">Product name</label>
+          <input
+            type="text"
+            class="form-control is-valid"
+            id="validationName"
+            name="prod_name"
+            placeholder="Add Product Name"
+            required
+            ngModel
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationCategory">Category Id</label>
+          <select
+            class="form-control is-valid"
+            id="validationCategory"
+            name="prod_category"
+            required
+            ngModel
+          >
+            <option value="1">Electronics</option>
+            <option value="2">Men</option>
+            <option value="3">Women</option>
+            <option value="4">Kids</option>
+            <option value="5">Home & Furniture</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="validationPrice">Price</label>
+          <input
+            type="text"
+            class="form-control is-valid"
+            id="validationPrice"
+            name="prod_price"
+            placeholder="Price of Product"
+            required
+            ngModel
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationDescription">Description</label>
+          <div class="input-group">
+            <textarea
+              type="text"
+              class="form-control is-valid"
+              id="validationDescription"
+              name="prod_description"
+              placeholder="Enter Description"
+              required
+              ngModel
+            ></textarea>
+            <div class="invalid-feedback">Please choose a Description.</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="validationRating">Rating</label>
+          <select
+            class="custom-select"
+            id="validationRating"
+            name="prod_rating"
+            required
+            ngModel
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationavail">Available </label>
+          <select
+            class="custom-select"
+            id="validationavail"
+            name="prod_aval"
+            required
+            ngModel
+          >
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <button class="btn btn-primary" type="submit">Submit Form</button>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>

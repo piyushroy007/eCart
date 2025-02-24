@@ -1,9 +1,24 @@
 <div class="list-group list-group-flush">
-    <a class="list-group-item  p-3" href="prod">View All Products</a>
-    <a class="list-group-item  p-3" href="prod/addprods">Add New Products</a>
-    <a class="list-group-item  p-3" 
+  <a
+    class="list-group-item p-3"
+    routerLink="prod"
+    (click)="setActive('all')"
+    [ngClass]="{ active: activeItem === 'all' }"
+    >View All Products</a
+  >
+  <a
+    class="list-group-item p-3"
+    routerLink="prod/addprods"
+    (click)="setActive('addprods')"
+    [ngClass]="{ active: activeItem === 'addprods' }"
+    >Add New Products</a
+  >
+  <a
+    class="list-group-item p-3"
+    [ngClass]="{ active: activeItem === item.id }"
+    (click)="setActive(item.id)"
     *ngFor="let item of categoryList"
-     href="prod/searchcat/{{item.id}}">
-        {{item.categoryName}}
-    </a>
+  >
+    {{ item.categoryName }}
+  </a>
 </div>

@@ -27,13 +27,27 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Installing Json-Server
+
 https://www.npmjs.com/package/json-server
 
 ## Install JSON Server
+
         npm install -g json-server
 
-## GO TO : cd src/assets/data      
-Start JSON Server
+## GO TO : cd src/assets/data
+
+        Start JSON Server
         json-server --watch db.json
- http://localhost:3000/posts/1, you'll get
+        http://localhost:3000/posts/1, you'll get
         { "id": 1, "title": "json-server", "author": "typicode" }
+
+## For below issue :
+
+        opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+        library: 'digital envelope routines',
+        reason: 'unsupported',
+        code: 'ERR_OSSL_EVP_UNSUPPORTED'
+
+## Solution :
+
+        set NODE_OPTIONS=--openssl-legacy-provider
